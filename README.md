@@ -1,6 +1,6 @@
 # Proiecte
 python_and_c
-
+//open in raw
 Aplicatii in Python:
   -Numere - o aplicatie ce simuleaza un calculator cu operatii elementare pt numere complexe
   -Catalog - un catalog pentru studenti
