@@ -6,14 +6,8 @@ Aplicatii in Python:
   -Catalog - un catalog pentru studenti
   -Avioane - o aplicatie ce gestioneaza zborurile unei firme dintr-un fisier dat
   -Inchirieri filme - simuleaza procesul de inchiriere si returnare a unor filme
-            Secventa din main ce exemplifica operatiile efectuate de aplicatie:
-                   /*def Main(self):
-                        """
-                            Reads the command that the user gives and returns the command as a string
-                        """
-                        print("Type 'x' to exit.")
-                        print("Choose a menu: Movie, Client, Contracts")
-                        return input("Option:").strip()
+            Secventa din main ce exemplifica operatiile efectuate de aplicatie(Choose a menu: Movie, Client, Contract):
+                /*
 
                     def Movie_Menu(self):
                         """
@@ -74,19 +68,34 @@ Aplicatii in Python:
                         print("5.Students afer lab")
                         print("x-Exit")*/
   -examen - o aplicatie pentru o echipa de fotbal. Importare jucatori se face dintr-un fisier exterior.
-  /* def start(self):
-        print('1.Afisare jucatori')
-        print('2.Adaugare jucator')
-        print('3.Modificare inaltime')
-        print('4.Formare Echipa')
-        print('5.Importare jucatori')
-        print('x.Inchide aplicatia')*/
+                        /* 
+                        def start(self):
+                              print('1.Afisare jucatori')
+                              print('2.Adaugare jucator')
+                              print('3.Modificare inaltime')
+                              print('4.Formare Echipa')
+                              print('5.Importare jucatori')
+                              print('x.Inchide aplicatia')
+                              */
 Aplicatii in C:
-  -lab2-4(dinamic) iar lab2-4_static(static): o aplicatie care permite gestiunea ofertelor de la o agentie imobiliara.
-Fiecare oferta are: tip (teren, casa, apartament), suprafata, adresa, pret
-Aplicatia permite:
- a) Adaugarea de noi oferte. 
- b) Actualizare oferte
- c) Stergere oferta
- d) Vizualizare oferete ordonat dupa pret, tip (crescator/descrescator)
- e) Vizualizare oferta filtrate dupa un criteriu (suprafata, tip, pret)
+  -lab2-4(dinamic) iar lab2-4_static(static): /*o aplicatie care permite gestiunea ofertelor de la o agentie imobiliara.
+          Fiecare oferta are: tip (teren, casa, apartament), suprafata, adresa, pret
+          Aplicatia permite:
+           a) Adaugarea de noi oferte. 
+           b) Actualizare oferte
+           c) Stergere oferta
+           d) Vizualizare oferete ordonat dupa pret, tip (crescator/descrescator)/*
+ -Concurs-static :
+ /*
+            La concursul anual de programare, comitetul de evaluare inregistreaza intr-o lista scorul 
+            obtinut de fiecare participant. Despre fiecare participant se inregistreaza urmatoarele
+            informatii: Nume, Prenume, Scor. Fiecare participant trebuie sa rezolve 10 probleme, maximul 
+            de puncte pe fiecare problema este 10.
+              Creati o aplicatie care permite comitetului de organizare sa:
+            a) Adauge participanti
+            b) Actualizare participant existent
+            C) Sterge participanti
+            d) Permite afisearea participantilor filtrat dupa o proprietate (cei care au un scor mai mic decat o valoare data, 
+            cei cu nume incepand cu o litera data,etc)
+            e) Permite sortarea participantilor dupa: nume sau dupa scor (crescator/descrescator)
+             e) Vizualizare oferta filtrate dupa un criteriu (suprafata, tip, pret)/*
