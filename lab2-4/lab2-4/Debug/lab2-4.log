@@ -1,0 +1,45 @@
+﻿  service.c
+  functii.c
+  main.c
+  oferta.c
+  repo.c
+  ui.c
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(30): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(32): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(34): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(36): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(50): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(52): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(62): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(64): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(67): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(69): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(71): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(73): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(98): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(100): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(102): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(116): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+c:\users\alina\desktop\cv\lab2-4\lab2-4\ui.c(134): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1272): note: see declaration of 'scanf'
+  validator.c
+  vector.c
+  Generating Code...
+  LINK : C:\Users\alina\Desktop\cv\lab2-4\Debug\lab2-4.exe not found or not built by the last incremental link; performing full link
+  lab2-4.vcxproj -> C:\Users\alina\Desktop\cv\lab2-4\Debug\lab2-4.exe
