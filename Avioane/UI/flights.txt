@@ -1,0 +1,4 @@
+1,ARRIVAL,WizAir,Las Vegas
+1300,DEPARTURE,Tarom,Vienna
+3,ARRIVAL,WizAir,Luxemburg
+4,ARRIVAL, a,b

@@ -1,0 +1,5 @@
+1,ARRIVAL,WizAir,Las Vegas
+2,DEPARTURE,Blue Air,LA
+1200,ARRIVAL,Blue Air,London
+1300,DEPARTURE,Tarom,Vienna
+2199,DEPARTURE,Blue Air,Barcelona
