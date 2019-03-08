@@ -2,11 +2,11 @@
 Aplicatii in Python:
 <ul>
   <li>Numere - o aplicatie ce simuleaza un calculator cu operatii elementare pt numere complexe</li>
-  -Catalog - un catalog pentru studenti
-  -Avioane - o aplicatie ce gestioneaza zborurile unei firme dintr-un fisier dat
-  -Inchirieri filme - simuleaza procesul de inchiriere si returnare a unor filme
+  <li>Catalog - un catalog pentru studenti</li>
+  <li>Avioane - o aplicatie ce gestioneaza zborurile unei firme dintr-un fisier dat</li>
+  <li>Inchirieri filme - simuleaza procesul de inchiriere si returnare a unor filme</li>
             Secventa din main ce exemplifica operatiile efectuate de aplicatie(Choose a menu: Movie, Client, Contract):
-                /*
+               <p style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">
                     def Movie_Menu(self):
                         """
                             Prints the commands for movies and returns the command that the client picked as a string
@@ -22,7 +22,7 @@ Aplicatii in Python:
                         print("Write 'update' to update the dates of a movie")
                         print("Write 'random' to generate random a movie")
                         print("----------------------------------------------------------------")
-
+  </p>
                     def Client_Menu(self):
                         """
                             Prints the commands for client meniu and returns the command that the client picked as a string
