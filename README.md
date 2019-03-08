@@ -5,7 +5,7 @@
       <li>Numere - o aplicatie ce simuleaza un calculator cu operatii elementare pt numere complexe</li>
       <li>Catalog - un catalog pentru studenti</li>
       <li>Avioane - o aplicatie ce gestioneaza zborurile unei firme dintr-un fisier dat</li>
-      <li>Inchirieri filme - simuleaza procesul de inchiriere si returnare a unor filme</li>
+      <li>Inchirieri filme - simuleaza procesul de inchiriere si returnare a unor filme
                 Secventa din main ce exemplifica operatiile efectuate de aplicatie(Choose a menu: Movie, Client, Contract):
 
                 def Movie_Menu(self):
@@ -58,7 +58,8 @@
                             print("Write 'first' to see the first 30% clients")
                             print("----------------------------------------------------------------")*/
 
-      <li>Laborator - o aplicatie de gestionare a problemelor si laboratoarelor pentru un student sau o grupa </li>
+</li>
+      <li>Laborator - o aplicatie de gestionare a problemelor si laboratoarelor pentru un student sau o grupa 
                       Operatii efectuate:
 
                      def start(self):
@@ -68,7 +69,9 @@
                             print("4.Labs from a student")
                             print("5.Students afer lab")
                             print("x-Exit")*/
-      <li>examen - o aplicatie pentru o echipa de fotbal. Importare jucatori se face dintr-un fisier exterior</li>
+                            </li>
+                            
+  <li>examen - o aplicatie pentru o echipa de fotbal. Importare jucatori se face dintr-un fisier exterior</li>
 
                             def start(self):
                                   print('1.Afisare jucatori')
