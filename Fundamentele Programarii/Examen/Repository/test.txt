@@ -1,0 +1,7 @@
+Gediminas,Navickas,190,Fundas
+Niksa,Nikolic,192,Fundas
+Ionut,Dragusin,220,Fundas
+Paul,Graham,200,Pivot
+Tudor,Dumitrescu,186,Extrema
+Ionut,Popescu,200,Fundas
+Tudor,Dmitrescu,186,Extrema
