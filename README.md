@@ -1,16 +1,12 @@
 # Proiecte
-python_and_c
-
-//open in raw
-
 Aplicatii in Python:
-  -Numere - o aplicatie ce simuleaza un calculator cu operatii elementare pt numere complexe
+<ul>
+  <li>Numere - o aplicatie ce simuleaza un calculator cu operatii elementare pt numere complexe</li>
   -Catalog - un catalog pentru studenti
   -Avioane - o aplicatie ce gestioneaza zborurile unei firme dintr-un fisier dat
   -Inchirieri filme - simuleaza procesul de inchiriere si returnare a unor filme
             Secventa din main ce exemplifica operatiile efectuate de aplicatie(Choose a menu: Movie, Client, Contract):
                 /*
-
                     def Movie_Menu(self):
                         """
                             Prints the commands for movies and returns the command that the client picked as a string
@@ -79,6 +75,7 @@ Aplicatii in Python:
                               print('5.Importare jucatori')
                               print('x.Inchide aplicatia')
                               */
+          </ul>
 Aplicatii in C:
   -lab2-4(dinamic) iar lab2-4_static(static): /*o aplicatie care permite gestiunea ofertelor de la o agentie imobiliara.
           Fiecare oferta are: tip (teren, casa, apartament), suprafata, adresa, pret
