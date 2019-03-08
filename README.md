@@ -95,7 +95,8 @@
                b) Actualizare oferte
                c) Stergere oferta
                d) Vizualizare oferete ordonat dupa pret, tip (crescator/descrescator)/*
-     <li type="circle">Concurs-static <li>
+     
+<li type="circle">Concurs-static <li>
 
                 La concursul anual de programare, comitetul de evaluare inregistreaza intr-o lista scorul 
                 obtinut de fiecare participant. Despre fiecare participant se inregistreaza urmatoarele
