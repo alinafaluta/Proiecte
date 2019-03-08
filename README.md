@@ -1,5 +1,6 @@
 # Proiecte
-Aplicatii in Python:
+<ul>
+  <li type="square">Aplicatii in Python:</li>
 <ul>
   <li>Numere - o aplicatie ce simuleaza un calculator cu operatii elementare pt numere complexe</li>
   <li>Catalog - un catalog pentru studenti</li>
@@ -103,4 +104,5 @@ Aplicatii in C:
             cei cu nume incepand cu o litera data,etc)
             e) Permite sortarea participantilor dupa: nume sau dupa scor (crescator/descrescator)
             f) Vizualizare oferta filtrate dupa un criteriu (suprafata, tip, pret)/*
+</ul>
 </ul>
