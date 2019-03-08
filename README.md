@@ -6,7 +6,8 @@ Aplicatii in Python:
   <li>Avioane - o aplicatie ce gestioneaza zborurile unei firme dintr-un fisier dat</li>
   <li>Inchirieri filme - simuleaza procesul de inchiriere si returnare a unor filme</li>
             Secventa din main ce exemplifica operatiile efectuate de aplicatie(Choose a menu: Movie, Client, Contract):
-  <span  style="color:red; border:1px solid red;"> def Movie_Menu(self):</span>
+            
+            def Movie_Menu(self):
                         """
                             Prints the commands for movies and returns the command that the client picked as a string
                         """
@@ -21,7 +22,8 @@ Aplicatii in Python:
                         print("Write 'update' to update the dates of a movie")
                         print("Write 'random' to generate random a movie")
                         print("----------------------------------------------------------------")
-                    def Client_Menu(self):
+               
+               def Client_Menu(self):
                         """
                             Prints the commands for client meniu and returns the command that the client picked as a string
                         """
@@ -54,17 +56,19 @@ Aplicatii in Python:
                         print("Write 'top' to see 5 most rented movies")
                         print("Write 'first' to see the first 30% clients")
                         print("----------------------------------------------------------------")*/
-  -Laborator - o aplicatie de gestionare a problemelor si laboratoarelor pentru un student sau o grupa 
+  
+  <li>Laborator - o aplicatie de gestionare a problemelor si laboratoarelor pentru un student sau o grupa </li>
                   Operatii efectuate:
-                  /*def start(self):
+                 
+                 def start(self):
                         print("1.Students")
                         print("2.Search student after id")
                         print("3.Add lab")
                         print("4.Labs from a student")
                         print("5.Students afer lab")
                         print("x-Exit")*/
-  -examen - o aplicatie pentru o echipa de fotbal. Importare jucatori se face dintr-un fisier exterior.
-                        /* 
+  <li>examen - o aplicatie pentru o echipa de fotbal. Importare jucatori se face dintr-un fisier exterior</li>
+                        
                         def start(self):
                               print('1.Afisare jucatori')
                               print('2.Adaugare jucator')
@@ -72,18 +76,21 @@ Aplicatii in Python:
                               print('4.Formare Echipa')
                               print('5.Importare jucatori')
                               print('x.Inchide aplicatia')
-                              */
+                              
           </ul>
+          
 Aplicatii in C:
-  -lab2-4(dinamic) iar lab2-4_static(static): /*o aplicatie care permite gestiunea ofertelor de la o agentie imobiliara.
+<ul>
+  <li>lab2-4(dinamic) iar lab2-4_static(static): /*o aplicatie care permite gestiunea ofertelor de la o agentie imobiliara<li>
+          
           Fiecare oferta are: tip (teren, casa, apartament), suprafata, adresa, pret
           Aplicatia permite:
            a) Adaugarea de noi oferte. 
            b) Actualizare oferte
            c) Stergere oferta
            d) Vizualizare oferete ordonat dupa pret, tip (crescator/descrescator)/*
- -Concurs-static :
- /*
+ <li>Concurs-static <li>
+  
             La concursul anual de programare, comitetul de evaluare inregistreaza intr-o lista scorul 
             obtinut de fiecare participant. Despre fiecare participant se inregistreaza urmatoarele
             informatii: Nume, Prenume, Scor. Fiecare participant trebuie sa rezolve 10 probleme, maximul 
@@ -95,4 +102,5 @@ Aplicatii in C:
             d) Permite afisearea participantilor filtrat dupa o proprietate (cei care au un scor mai mic decat o valoare data, 
             cei cu nume incepand cu o litera data,etc)
             e) Permite sortarea participantilor dupa: nume sau dupa scor (crescator/descrescator)
-             e) Vizualizare oferta filtrate dupa un criteriu (suprafata, tip, pret)/*
+            f) Vizualizare oferta filtrate dupa un criteriu (suprafata, tip, pret)/*
+</ul>
