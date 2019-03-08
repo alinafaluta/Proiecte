@@ -80,9 +80,11 @@
 
               </ul>
           </li>
+ </ul>
+ <ul>
 <li type="square">Aplicatii in C:
     <ul>
-      <li>lab2-4(dinamic) iar lab2-4_static(static): /*o aplicatie care permite gestiunea ofertelor de la o agentie imobiliara<li>
+      <li type="cirlce">lab2-4(dinamic) iar lab2-4_static(static): /*o aplicatie care permite gestiunea ofertelor de la o agentie imobiliara<li>
 
               Fiecare oferta are: tip (teren, casa, apartament), suprafata, adresa, pret
               Aplicatia permite:
@@ -90,7 +92,7 @@
                b) Actualizare oferte
                c) Stergere oferta
                d) Vizualizare oferete ordonat dupa pret, tip (crescator/descrescator)/*
-     <li>Concurs-static <li>
+     <li type="circle">Concurs-static <li>
 
                 La concursul anual de programare, comitetul de evaluare inregistreaza intr-o lista scorul 
                 obtinut de fiecare participant. Despre fiecare participant se inregistreaza urmatoarele
@@ -106,6 +108,8 @@
                 f) Vizualizare oferta filtrate dupa un criteriu (suprafata, tip, pret)/*
     </ul>
 </li>
+</ul>
+<ul>
 <li type="square">Aplicatii in Java
     <ul>
       <li type="circle">Proiect - reprezinta o aplicatie cu interfata grafica, folosind java si javafx, ce simuleaza un catalog. Acesta are 3 tipuri de useri, fiecare avand parolele hardcodate in baza de date. Avem studenti, secretari si profesori. Studentul poate intra sa isi vada notele si media, secretarul adauga studenti si useri, si poate vedea diferite rapoarte pentru studenti/grupe, studenti/profesor, iar profesorul poate face crud pe teme, vizualiza rapoarte , si adauga interactiv note pentru studenti.</li>
