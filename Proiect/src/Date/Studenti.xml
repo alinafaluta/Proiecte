@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<inbox>
+    <student>
+        <idStudent>1001</idStudent>
+        <nume>Dragan Alex</nume>
+        <grupa>223</grupa>
+        <email>da1001@yahoo.com</email>
+        <profesor>Serban</profesor>
+    </student>
+    <student>
+        <idStudent>1002</idStudent>
+        <nume>Forgacs Amelia</nume>
+        <grupa>223</grupa>
+        <email>a@yahoo.com</email>
+        <profesor>Serban</profesor>
+    </student>
+    <student>
+        <idStudent>1003</idStudent>
+        <nume>Faluta Alina</nume>
+        <grupa>223</grupa>
+        <email>alina.faluta@gmail.com</email>
+        <profesor>Guran</profesor>
+    </student>
+    <student>
+        <idStudent>1008</idStudent>
+        <nume>Enachioiu Teofana</nume>
+        <grupa>223</grupa>
+        <email>enaTeo@yahoo.com</email>
+        <profesor>Guran</profesor>
+    </student>
+    <student>
+        <idStudent>1004</idStudent>
+        <nume>Cretu Mihai</nume>
+        <grupa>222</grupa>
+        <email>mihaita@yahoo.com</email>
+        <profesor>Guran</profesor>
+    </student>
+    <student>
+        <idStudent>1005</idStudent>
+        <nume>Enasoae Simona</nume>
+        <grupa>222</grupa>
+        <email>ena@yahoo.com</email>
+        <profesor>Serban</profesor>
+    </student>
+    <student>
+        <idStudent>1006</idStudent>
+        <nume>Ene Andrei</nume>
+        <grupa>221</grupa>
+        <email>andrei.ene@gmail.com</email>
+        <profesor>Guran</profesor>
+    </student>
+    <student>
+        <idStudent>1007</idStudent>
+        <nume>Filipoiu George</nume>
+        <grupa>227</grupa>
+        <email>filipoiu@yahoo.com</email>
+        <profesor>Serban</profesor>
+    </student>
+</inbox>

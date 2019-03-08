@@ -1,0 +1,5 @@
+1,problema noua,3,1
+2,Laborator 2,3,2
+3,Tentativa de catalog,4,2
+4,Tema mea e draguta!,10,5
+5,Tema numarul 5,8,5

@@ -1,0 +1,6 @@
+Tema: 2
+Nota: 7.5
+Predata in saptamana: 2
+Deadline: 3
+Feedback: Feed
+

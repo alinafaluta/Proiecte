@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<inbox>
+    <tema>
+        <idTema>1</idTema>
+        <descriere>Citire din linaia de comanda</descriere>
+        <deadline>2</deadline>
+        <dataPredare>1</dataPredare>
+    </tema>
+    <tema>
+        <idTema>2</idTema>
+        <descriere>Sabloane</descriere>
+        <deadline>3</deadline>
+        <dataPredare>2</dataPredare>
+    </tema>
+    <tema>
+        <idTema>3</idTema>
+        <descriere>Catalog MAP - crud</descriere>
+        <deadline>4</deadline>
+        <dataPredare>3</dataPredare>
+    </tema>
+    <tema>
+        <idTema>4</idTema>
+        <descriere>Catalog MAP - service+consola</descriere>
+        <deadline>6</deadline>
+        <dataPredare>5</dataPredare>
+    </tema>
+    <tema>
+        <idTema>5</idTema>
+        <descriere>Catalog MAP - Repo in fisier</descriere>
+        <deadline>7</deadline>
+        <dataPredare>6</dataPredare>
+    </tema>
+    <tema>
+        <idTema>6</idTema>
+        <descriere>Catalog MAP - Repo XML</descriere>
+        <deadline>8</deadline>
+        <dataPredare>7</dataPredare>
+    </tema>
+    <tema>
+        <idTema>7</idTema>
+        <descriere>Catalog MAP - interfata grafica pentru o componenta</descriere>
+        <deadline>9</deadline>
+        <dataPredare>8</dataPredare>
+    </tema>
+    <tema>
+        <idTema>8</idTema>
+        <descriere>Catalog MAP - interfata grafica</descriere>
+        <deadline>10</deadline>
+        <dataPredare>9</dataPredare>
+    </tema>
+    <tema>
+        <idTema>9</idTema>
+        <descriere>Catalog MAP - C# (iteratia 1)</descriere>
+        <deadline>12</deadline>
+        <dataPredare>10</dataPredare>
+    </tema>
+    <tema>
+        <idTema>10</idTema>
+        <descriere>Catalog MAP - C# (iteratia 2)</descriere>
+        <deadline>14</deadline>
+        <dataPredare>12</dataPredare>
+    </tema>
+</inbox>

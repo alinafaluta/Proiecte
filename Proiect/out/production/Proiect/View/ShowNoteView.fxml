@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="View.ShowNote">
+  <children>
+    <ImageView fitHeight="800.0" fitWidth="1280.0000492591425" layoutX="-30.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+      </image>
+    </ImageView>
+    <TableView fx:id="TabelCuNoteStudenti" layoutX="46.0" layoutY="67.0" prefHeight="667.0" prefWidth="675.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="NrTema" fx:id="NrTemaTabelNoteColumn">
+          <cellValueFactory>
+            <PropertyValueFactory property="nrTema" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="173.0" text="Descriere" fx:id="DescriereNoteColumn">
+          <cellValueFactory>
+            <PropertyValueFactory property="descriere" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="75.0" text="Nota" fx:id="NotaColumn">
+          <cellValueFactory>
+            <PropertyValueFactory property="nota" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="75.0" text="Profesor" fx:id="ProfesorNotaColumn">
+          <cellValueFactory>
+            <PropertyValueFactory property="profesor" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="279.0" text="Feedback" fx:id="FeedbackNotaColumn">
+          <cellValueFactory>
+            <PropertyValueFactory property="feedback" />
+          </cellValueFactory>
+        </TableColumn>
+      </columns>
+      <stylesheets>
+        <URL value="@incercam.css" />
+      </stylesheets>
+    </TableView>
+    <ImageView blendMode="SRC_OVER" fitHeight="101.0" fitWidth="101.0" focusTraversable="false" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="885.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="685.0">
+      <effect>
+        <DropShadow color="#66edff" height="37.12698412698413" radius="18.063492063492063" width="37.12698412698413" />
+      </effect>
+      <image>
+        <Image url="@../Media/Back.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="btnBack" layoutX="885.0" layoutY="685.0" mnemonicParsing="false" onAction="#backToLogin" opacity="0.0" prefHeight="101.0" prefWidth="101.0" text="Button">
+      <tooltip>
+        <Tooltip text="Inapoi la pagina de conectare" />
+      </tooltip>
+    </Button>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="760.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="#002966" height="61.476190476190474" radius="30.238095238095237" spread="0.38095238095238093" width="61.476190476190474" />
+      </effect>
+      <image>
+        <Image url="@../Media/media.png" />
+      </image>
+    </ImageView>
+    <TextField fx:id="ShowMediaStud" editable="false" layoutX="823.0" layoutY="586.0" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color:#DAe3E9">
+      <effect>
+        <DropShadow color="#002133" height="136.06349206349205" radius="67.53174603174602" width="136.06349206349205" />
+      </effect>
+    </TextField>
+    <ImageView fitHeight="60.87710379511203" fitWidth="253.65457153320312" layoutX="733.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="#99daff" height="35.11111111111111" radius="17.055555555555554" spread="0.12698412698412698" width="35.11111111111111" />
+      </effect>
+      <image>
+        <Image url="@../Media/generatedtext%20(3).png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="72.03789520263672" fitWidth="284.65459803129613" layoutX="721.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="#66a3ff" height="23.015873015873016" radius="11.007936507936508" width="23.015873015873016" />
+      </effect>
+      <image>
+        <Image url="@../Media/generatedtextewre.png" />
+      </image>
+    </ImageView>
+    <TextField fx:id="temePredate" layoutX="823.0" layoutY="346.0" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color:#DAe3E9">
+      <effect>
+        <DropShadow color="#9f9f9f" height="81.47619047619048" radius="40.23809523809524" width="81.47619047619048" />
+      </effect>
+    </TextField>
+    <TextField fx:id="temeNePredate" layoutX="823.0" layoutY="457.0" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color:#DAe3E9">
+      <effect>
+        <DropShadow color="#66a3ff" height="51.238095238095234" radius="25.119047619047617" spread="0.047619047619047616" width="51.238095238095234" />
+      </effect>
+    </TextField>
+  </children>
+</AnchorPane>

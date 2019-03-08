@@ -1,0 +1,16 @@
+.combo-box > .list-view{
+	-fx-background-color:  #DAe3E9;
+	
+}
+.combo-box-base > .arrowButton :hover {
+	-fx-background-color:  black-;
+}
+
+.combo-box-base > .arrowButton > .arrow {
+	-fx-background-color:  white;
+}
+.combo-box{
+	-fx-background-color:#DAE3E9;
+}
+.color-box-popup>.list-view>.list-cell{
+-fx-background-color:#DAE3E9;}

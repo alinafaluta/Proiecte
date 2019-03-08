@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="View.MainController">
+  <children>
+    <ImageView fitHeight="800.0" fitWidth="1422.2222222222222" layoutX="-211.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Media/school-supplies-video-animation_41zgzcfbe__F0011.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Media/generatedtext%20(1).png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Media/generatedtext%20(2).png" />
+      </image>
+    </ImageView>
+    <TextField fx:id="UsernameTextField" layoutX="400.0" layoutY="434.0" prefWidth="200.0">
+      <tooltip>
+        <Tooltip text="Inserati Username-ul" textAlignment="JUSTIFY" />
+      </tooltip>
+    </TextField>
+    <PasswordField fx:id="PasswordTextField" layoutX="400.0" layoutY="512.0" prefWidth="200.0">
+      <tooltip>
+        <Tooltip text="Inserati parola" textAlignment="JUSTIFY" />
+      </tooltip>
+    </PasswordField>
+    <ImageView fitHeight="43.51327295303345" fitWidth="149.0" layoutX="426.0" layoutY="558.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Media/connect.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="ButonCONECTARE" layoutX="426.0" layoutY="555.0" mnemonicParsing="false" onAction="#handleConnect" opacity="0.28" prefHeight="50.0" prefWidth="149.0" text="">
+      <tooltip>
+        <Tooltip text="Apasati pentru conectare" />
+      </tooltip>
+    </Button>
+    <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="916.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Media/info.png" />
+      </image>
+    </ImageView>
+    <Button mnemonicParsing="false" opacity="0.0" prefHeight="71.0" prefWidth="70.0" text="Button" AnchorPane.bottomAnchor="715.0" AnchorPane.leftAnchor="916.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <tooltip>
+        <Tooltip text="Daca tineti mouse-ul pe orice camp sau buton se vor afisa informatii despre ce date trebuie inserate sau despre ce face fiecare buton" textAlignment="JUSTIFY" textOverrun="WORD_ELLIPSIS">
+          <font>
+            <Font name="System Bold Italic" size="14.0" />
+          </font>
+        </Tooltip>
+      </tooltip>
+    </Button>
+  </children>
+</AnchorPane>

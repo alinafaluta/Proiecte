@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="PrimaryStudentAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="View.StudentController">
+  <children>
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="800.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+      <stylesheets>
+        <URL value="@tabHeader.css" />
+      </stylesheets>
+      <tabs>
+        <Tab style="-fx-background-color:linear-gradient(#2A3F76,#A6B2C8);" text="Studenți">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="891.0" layoutY="531.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/reading.png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="FindStudentButton" layoutX="891.0" layoutY="531.0" mnemonicParsing="false" onAction="#handleCautaStudent" opacity="0.0" prefHeight="80.0" prefWidth="80.0" text="Find" />
+                <ImageView fitHeight="769.0" fitWidth="1054.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+                  <image>
+                    <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="44.805686950683594" fitWidth="127.75675984021865" layoutX="622.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow height="69.38095238095237" radius="34.19047619047618" spread="0.0873015873015873" width="69.38095238095237">
+                      <color>
+                        <Color blue="1.000" green="0.784" red="0.400" fx:id="x4" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <image>
+                    <Image url="@../Media/email.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="41.25625" fitWidth="161.0" layoutX="665.0" layoutY="654.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow height="35.11111111111111" radius="17.055555555555554" width="35.11111111111111">
+                      <color>
+                        <Color blue="1.000" green="0.856" red="0.600" fx:id="x5" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <image>
+                    <Image url="@../Media/numefis.png" />
+                  </image>
+                </ImageView>
+                <TableView fx:id="TabelCuStudenti" cache="false" cacheHint="DEFAULT" depthTest="INHERIT" layoutX="40.0" layoutY="129.0" mouseTransparent="false" pickOnBounds="false" prefHeight="512.0" prefWidth="571.0">
+                  <columns>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="63.0" text="IdStudent" fx:id="idStudent">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="idStudent" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="163.0" text="Nume" fx:id="NumeStudent">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="nume" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="76.0" text="Grupa" fx:id="GrupaStudent">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="grupa" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="116.0" text="Profesor" fx:id="ProfesorStudent">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="profesor" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="143.0" text="Email" fx:id="emailStudent">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="email" />
+                      </cellValueFactory>
+                    </TableColumn>
+                  </columns>
+                  <effect>
+                    <DropShadow color="#001433" height="125.82539682539681" radius="62.412698412698404" spread="0.2777777777777778" width="125.82539682539681" />
+                  </effect>
+                  <stylesheets>
+                    <URL value="@incercam.css" />
+                  </stylesheets>
+                </TableView>
+                <ChoiceBox fx:id="GrupaChoiceBox" layoutX="764.0" layoutY="244.0" prefWidth="181.0" style="-fx-background-color:#DAe3E9;">
+                  <effect>
+                    <DropShadow height="59.06349206349206" radius="29.03174603174603" spread="0.3492063492063492" width="59.06349206349206">
+                      <color>
+                        <Color blue="0.500" green="0.500" red="0.500" fx:id="x3" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="221" />
+                      <String fx:value="222" />
+                      <String fx:value="223" />
+                      <String fx:value="224" />
+                      <String fx:value="225" />
+                      <String fx:value="226" />
+                      <String fx:value="227" />
+                    </FXCollections>
+                  </items>
+                  <stylesheets>
+                    <URL value="@comboBox.css" />
+                  </stylesheets>
+                  <tooltip>
+                    <Tooltip text="Alegeti grupa" />
+                  </tooltip>
+                </ChoiceBox>
+                <TextField fx:id="NumeStudentTextField" layoutX="764.0" layoutY="167.0" prefWidth="181.0" promptText="Numele Studentului" style="-fx-background-color:#DAe3E9;">
+                  <effect>
+                    <DropShadow height="81.0" radius="40.0" spread="0.3" width="81.0">
+                      <color>
+                        <Color blue="0.625" green="0.625" red="0.625" fx:id="x1" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Inserati numele studentului" />
+                  </tooltip>
+                </TextField>
+                <TextField fx:id="ProfesorTextField" layoutX="765.0" layoutY="398.0" prefWidth="180.99990000000253" promptText="Profesor" style="-fx-background-color:#DAe3E9;">
+                  <effect>
+                    <DropShadow color="$x1" height="105.42857142857143" radius="52.214285714285715" spread="0.5" width="105.42857142857143" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Inserati numele profesorului" />
+                  </tooltip>
+                </TextField>
+                <TextField fx:id="EmailTextField" layoutX="764.0" layoutY="323.0" prefWidth="181.0" promptText="Email-ul Studentului" style="-fx-background-color:#DAe3E9;" styleClass="null">
+                  <effect>
+                    <DropShadow color="#99c2ff" height="71.15873015873017" radius="35.07936507936508" width="71.15873015873017" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Inserati emailul." />
+                  </tooltip>
+                </TextField>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="659.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow height="21.000000000000007" radius="10.000000000000004" width="21.000000000000007" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Add.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="739.0" layoutY="531.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Delete.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="819.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow>
+                      <color>
+                        <Color blue="0.250" green="0.250" red="0.250" fx:id="x6" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Update.png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="saveStudentButton" layoutX="659.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleAdaugaStudent" opacity="0.01" prefHeight="80.0" prefWidth="80.0" text="Add">
+                  <tooltip>
+                    <Tooltip text="Adauga un student" />
+                  </tooltip>
+                </Button>
+                <Button fx:id="DeleteStudentButton" layoutX="739.0" layoutY="531.0" mnemonicParsing="false" onAction="#handleStergeStudent" opacity="0.0" prefHeight="80.0" prefWidth="80.0" text="Delete">
+                  <tooltip>
+                    <Tooltip text="Sterge un student" />
+                  </tooltip>
+                </Button>
+                <Button fx:id="UpdateStudentButton" layoutX="819.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleModificaStudent" opacity="0.0" prefHeight="80.0" prefWidth="80.0" text="Update">
+                  <tooltip>
+                    <Tooltip text="Modifica un student" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="111.0" fitWidth="111.0" layoutX="835.0" layoutY="632.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../Media/pdf-icon-round.png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="ExportaPDFStudent" layoutX="835.0" layoutY="638.0" mnemonicParsing="false" onAction="#handleExportPDFstudent" opacity="0.0" prefHeight="101.0" prefWidth="111.0" text="Export PDF" textAlignment="JUSTIFY">
+                  <tooltip>
+                    <Tooltip text="Exporta continutul tabelului afisat" />
+                  </tooltip>
+                </Button>
+                <TextField fx:id="idStudentTextField" editable="false" layoutX="745.0" layoutY="129.0" opacity="0.0" prefWidth="200.0" promptText="IdStudent" style="-fx-background-color:#DAe3E9;" />
+                <ComboBox fx:id="FilterStudentComboBox" layoutX="352.0" layoutY="694.0" onAction="#handleFilterStudent" prefHeight="21.0" prefWidth="199.0">
+                  <effect>
+                    <DropShadow height="83.25396825396825" radius="41.12698412698413" spread="0.2857142857142857" width="83.25396825396825">
+                      <color>
+                        <Color blue="0.400" green="0.160" red="0.000" fx:id="x2" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Nimic" />
+                      <String fx:value="Grupa" />
+                      <String fx:value="Nume" />
+                      <String fx:value="Profesor" />
+                      <String fx:value="Email" />
+                    </FXCollections>
+                  </items>
+                  <stylesheets>
+                    <URL value="@comboBox.css" />
+                  </stylesheets>
+                  <tooltip>
+                    <Tooltip text="Filtreaza datele din tabel dupa un anumit criteriu pe care il selectati" />
+                  </tooltip>
+                </ComboBox>
+                <TextField fx:id="NumeFisierStudentPDF" layoutX="664.0" layoutY="705.0" prefWidth="162.0001220703125" promptText="Nume fisier PDF" style="-fx-background-color:#DAe3E9;">
+                  <effect>
+                    <DropShadow color="#001066" height="55.03174603174603" radius="27.015873015873016" spread="0.5" width="55.03174603174603" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Alegeti cu ce nume sa se exporte tabelul" />
+                  </tooltip>
+                </TextField>
+                <ImageView fitHeight="44.07582792517257" fitWidth="124.0" layoutX="629.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x3" height="61.317460317460316" radius="30.158730158730158" width="61.317460317460316" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/nume.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="14.0" layoutY="675.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow height="37.12698412698413" radius="18.063492063492063" width="37.12698412698413">
+                      <color>
+                        <Color blue="1.000" green="0.929" red="0.800" fx:id="x9" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Back.png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="backButton" layoutX="14.0" layoutY="675.0" mnemonicParsing="false" onAction="#backToLogin" opacity="0.0" prefHeight="80.0" prefWidth="76.0" text="Button">
+                  <tooltip>
+                    <Tooltip text="Inapoi la pagina de conectare" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="906.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x2" height="37.12698412698413" radius="18.063492063492063" width="37.12698412698413" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/info.png" />
+                  </image>
+                </ImageView>
+                <Button layoutX="906.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" text="Button" textOverrun="ELLIPSIS">
+                  <tooltip>
+                    <Tooltip text="Daca tineti mouse-ul pe orice camp sau buton se vor afisa informatii despre ce date trebuie inserate sau despre ce face fiecare buton" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="46.5402949105319" fitWidth="116.90478515625" layoutX="633.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow height="37.12698412698413" radius="18.063492063492063" width="37.12698412698413">
+                      <color>
+                        <Color blue="0.375" green="0.375" red="0.375" fx:id="x7" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <image>
+                    <Image url="@../Media/grupa.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="46.12970733642578" fitWidth="129.70588605327328" layoutX="624.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x4" height="45.19047619047619" radius="22.095238095238095" width="45.19047619047619" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/profesor.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="152.0" layoutY="689.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x5" height="45.19047619047619" radius="22.095238095238095" width="45.19047619047619" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/generatedtext%20(6).png" />
+                  </image>
+                </ImageView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab style="-fx-background-color:linear-gradient(#2A3F76,#A6B2C8);" text="Useri">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ImageView fitHeight="769.0" fitWidth="1054.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+                  <image>
+                    <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+                  </image>
+                </ImageView>
+                <TableView fx:id="TabelUser" layoutX="94.0" layoutY="144.0" prefHeight="445.53741455078125" prefWidth="445.0">
+                  <columns>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="205.0" text="Username" fx:id="UsernameColumn">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="username" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn maxWidth="5000.0" minWidth="0.0" prefWidth="0.0" text="Password" fx:id="PasswordColumn">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="password" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="228.0" text="UserType" fx:id="UserTypeColumn">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="userType" />
+                      </cellValueFactory>
+                    </TableColumn>
+                  </columns>
+                  <effect>
+                    <DropShadow height="85.26984126984127" radius="42.13492063492063" spread="0.25396825396825395" width="85.26984126984127">
+                      <color>
+                        <Color blue="0.200" green="0.032" red="0.000" fx:id="x8" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <stylesheets>
+                    <URL value="@incercam.css" />
+                  </stylesheets>
+                </TableView>
+                <TextField fx:id="UserNameTextField" layoutX="670.0" layoutY="182.0" prefWidth="200.0" promptText="Username" style="-fx-background-color:#DAe3E9;">
+                  <effect>
+                    <DropShadow color="$x1" height="75.19047619047619" radius="37.095238095238095" spread="0.373015873015873" width="75.19047619047619" />
+                  </effect>
+                </TextField>
+                <TextField fx:id="PasswordTextField" layoutX="682.0" layoutY="297.0" prefWidth="200.0" promptText="Parola" style="-fx-background-color:#DAe3E9;">
+                  <effect>
+                    <DropShadow color="$x3" height="63.095238095238095" radius="31.047619047619047" spread="0.35714285714285715" width="63.095238095238095" />
+                  </effect>
+                </TextField>
+                <ChoiceBox fx:id="userTypeTextField" layoutX="682.0" layoutY="402.0" prefWidth="200.0" style="-fx-background-color:#DAe3E9;">
+                  <effect>
+                    <DropShadow color="#66a3ff" height="91.31746031746032" radius="45.15873015873016" spread="0.30952380952380953" width="91.31746031746032" />
+                  </effect>
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="student" />
+                      <String fx:value="profesor" />
+                      <String fx:value="secretar" />
+                    </FXCollections>
+                  </items>
+                </ChoiceBox>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="623.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow height="18.984126984126984" radius="8.992063492063492" width="18.984126984126984" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Add.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="770.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow height="21.158730158730158" radius="10.079365079365079" width="21.158730158730158" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Delete.png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="addUserButton" layoutX="623.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleAdaugaUser" opacity="0.0" prefHeight="80.0" prefWidth="80.0" text="Add" />
+                <Button fx:id="deleteUserButton" layoutX="770.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleStergeUser" opacity="0.0" prefHeight="80.0" prefWidth="80.0" text="delete" />
+                <ComboBox fx:id="FiltrareUserComboBOx" layoutX="682.0" layoutY="601.0" onAction="#handleFiltrareUser" prefHeight="21.0" prefWidth="200.0">
+                  <effect>
+                    <DropShadow color="#080066" height="81.23809523809524" radius="40.11904761904762" spread="0.08730158730158732" width="81.23809523809524" />
+                  </effect>
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="nimic" />
+                      <String fx:value="student" />
+                      <String fx:value="profesor" />
+                      <String fx:value="secretar" />
+                    </FXCollections>
+                  </items>
+                  <stylesheets>
+                    <URL value="@comboBox.css" />
+                  </stylesheets>
+                </ComboBox>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="14.0" layoutY="675.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x9" height="37.12698412698413" radius="18.063492063492063" width="37.12698412698413" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Back.png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="ba2" layoutX="9.0" layoutY="670.0" mnemonicParsing="false" onAction="#backToLogin" opacity="0.0" prefHeight="90.0" prefWidth="90.0" text="Button">
+                  <tooltip>
+                    <Tooltip text="Inapoi la pagina de conectare" />
+                  </tooltip>
+                </Button>
+                <Button layoutX="900.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="90.0" prefWidth="90.0" text="Button" textOverrun="ELLIPSIS">
+                  <tooltip>
+                    <Tooltip text="Daca tineti mouse-ul pe orice camp sau buton se vor afisa informatii despre ce date trebuie inserate sau despre ce face fiecare buton" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="906.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="#002966" height="37.12698412698413" radius="18.063492063492063" width="37.12698412698413" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/info.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="55.000003814697266" fitWidth="295.2976489832216" layoutX="169.0" layoutY="601.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="#99daff" height="37.12698412698413" radius="18.063492063492063" width="37.12698412698413" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/generatedtext%20(4).png" />
+                  </image>
+                </ImageView>
+                <Button id="AfisareRapoarteButton" layoutX="169.0" layoutY="601.0" mnemonicParsing="false" onAction="#handleRapoarteAfisare" opacity="0.0" prefHeight="55.0" prefWidth="279.3671875" text="Afisare Rapoarte">
+                  <font>
+                    <Font name="System Bold Italic" size="16.0" />
+                  </font>
+                </Button>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="576.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x3" height="49.22222222222222" radius="24.11111111111111" width="49.22222222222222" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/useename.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="46.53740310668945" fitWidth="167.1672575510963" layoutX="582.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x7" height="49.22222222222222" radius="24.11111111111111" spread="0.05555555555555555" width="49.22222222222222" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/pass.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="587.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="#667eff" height="29.063492063492063" radius="14.031746031746032" spread="0.07142857142857142" width="29.063492063492063" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/generatedtext%20(5).png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="587.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x8" height="33.095238095238095" radius="16.047619047619047" width="33.095238095238095" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/generatedtext%20(6).png" />
+                  </image>
+                </ImageView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

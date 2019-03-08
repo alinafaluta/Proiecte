@@ -1,0 +1,12 @@
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\obj\Debug\netcoreapp2.1\Laborator12-13.csprojAssemblyReference.cache
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\obj\Debug\netcoreapp2.1\Laborator12-13.csproj.CoreCompileInputs.cache
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\obj\Debug\netcoreapp2.1\Laborator12-13.AssemblyInfoInputs.cache
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\obj\Debug\netcoreapp2.1\Laborator12-13.AssemblyInfo.cs
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\bin\Debug\netcoreapp2.1\Laborator12-13.deps.json
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\bin\Debug\netcoreapp2.1\Laborator12-13.runtimeconfig.json
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\bin\Debug\netcoreapp2.1\Laborator12-13.runtimeconfig.dev.json
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\bin\Debug\netcoreapp2.1\Laborator12-13.dll
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\bin\Debug\netcoreapp2.1\Laborator12-13.pdb
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\obj\Debug\netcoreapp2.1\Laborator12-13.dll
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\obj\Debug\netcoreapp2.1\Laborator12-13.pdb
+D:\Facultate Anul II\Metode Avansate de Programare\Laborator12-13\Laborator12-13\bin\Debug\netcoreapp2.1\Laborator12-13.dll.config

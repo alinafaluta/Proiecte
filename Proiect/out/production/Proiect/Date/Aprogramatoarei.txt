@@ -1,0 +1,18 @@
+Tema: 1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: fasads
+
+Tema: 1
+Nota: 9.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: Bravo!
+
+Tema: 1
+Nota: 3.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: das
+

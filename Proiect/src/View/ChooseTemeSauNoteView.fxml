@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ConnectBoard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="View.ProfesorController">
+  <children>
+    <ImageView fitHeight="870.9983520507812" fitWidth="1028.9956665039062" layoutX="-13.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="false" rotate="0.0">
+      <image>
+        <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="111.0" fitWidth="111.0" layoutX="875.0" layoutY="675.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="#66edff" height="37.12698412698413" radius="18.063492063492063" spread="0.1746031746031746" width="37.12698412698413" />
+      </effect>
+      <image>
+        <Image url="@../Media/Back.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="backTOLogin" mnemonicParsing="false" onAction="#backToLogin" opacity="0.0" prefHeight="111.0" prefWidth="111.0" text="Button" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="875.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="675.0">
+      <tooltip>
+        <Tooltip text="Inapoi la pagina de conectare" />
+      </tooltip>
+    </Button>
+    <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="875.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="#002966" height="111.71428571428572" radius="55.35714285714286" spread="0.031746031746031744" width="111.71428571428572" />
+      </effect>
+      <image>
+        <Image url="@../Media/info.png" />
+      </image>
+    </ImageView>
+    <Button mnemonicParsing="false" opacity="0.0" prefHeight="101.0" prefWidth="101.0" text="Button" AnchorPane.bottomAnchor="669.0" AnchorPane.leftAnchor="875.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="30.0">
+      <tooltip>
+        <Tooltip text="Daca tineti mouse-ul pe butoane va fi idicat catre ce fereastra va vor duce" />
+      </tooltip>
+    </Button>
+    <GridPane layoutX="207.0" layoutY="104.0" prefHeight="606.0" prefWidth="586.0">
+      <children>
+        <ImageView fitHeight="235.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="false" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <effect>
+            <DropShadow color="#808080" height="81.0" radius="40.0" width="81.0" />
+          </effect>
+          <image>
+            <Image url="@../Media/clipboard%20(1).png" />
+          </image>
+        </ImageView>
+        <Button fx:id="TemeButton" mnemonicParsing="false" onAction="#handleAdaugaTemeDinConnect" opacity="0.03" prefHeight="235.0" prefWidth="243.0" text="Teme" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <tooltip>
+            <Tooltip text="Apasati pentru a intra in meniul de adaugare teme" />
+          </tooltip>
+        </Button>
+        <ImageView fitHeight="235.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          <effect>
+            <DropShadow height="81.0" radius="40.0" width="81.0">
+              <color>
+                <Color blue="0.200" green="0.032" red="0.000" fx:id="x1" />
+              </color>
+            </DropShadow>
+          </effect>
+          <image>
+            <Image url="@../Media/note-512.png" />
+          </image>
+        </ImageView>
+        <Button fx:id="CatalogButton" mnemonicParsing="false" onAction="#handleAdaugaNoteDinConnect" opacity="0.0" prefHeight="235.0" prefWidth="243.0" text="Note" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          <tooltip>
+            <Tooltip text="Apasati pentru a intra in meniul de adaugare note" />
+          </tooltip>
+        </Button>
+        <VBox prefHeight="356.0" prefWidth="519.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <children>
+            <ImageView fitHeight="70.16130065917969" fitWidth="256.027196922389" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Media/Note.png" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="96.47177791595459" fitWidth="275.0" pickOnBounds="true" preserveRatio="true">
+              <effect>
+                <DropShadow color="#606060" height="51.0" radius="25.0" spread="0.2" width="51.0" />
+              </effect>
+              <image>
+                <Image url="@../Media/Adauga.png" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="69.82562691182976" fitWidth="256.02728271484375" pickOnBounds="true" preserveRatio="true">
+              <effect>
+                <DropShadow color="#404040" height="51.0" radius="25.0" spread="0.2" width="51.0" />
+              </effect>
+              <image>
+                <Image url="@../Media/tema.png" />
+              </image>
+            </ImageView>
+          </children>
+        </VBox>
+        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <ImageView fitHeight="70.16130065917969" fitWidth="256.027196922389" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Media/Note.png" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="89.81600495841977" fitWidth="256.0272437500025" pickOnBounds="true" preserveRatio="false">
+              <effect>
+                <DropShadow color="$x1" height="51.0" radius="25.0" spread="0.2" width="51.0" />
+              </effect>
+              <image>
+                <Image url="@../Media/Adauga.png" />
+              </image>
+            </ImageView>
+            <ImageView fitHeight="70.16130065917969" fitWidth="256.027196922389" pickOnBounds="true" preserveRatio="true">
+              <effect>
+                <DropShadow color="$x1" height="51.0" radius="25.0" spread="0.20634920634920634" width="51.0" />
+              </effect>
+              <image>
+                <Image url="@../Media/Note.png" />
+              </image>
+            </ImageView>
+          </children>
+        </VBox>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="447.0" minWidth="10.0" prefWidth="443.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="514.0" minWidth="10.0" prefWidth="444.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="368.0" minHeight="10.0" prefHeight="305.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="317.0" minHeight="10.0" prefHeight="301.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+
+adauga([],Rez,Rez):-!.
+adauga([],[],[]):-!.
+adauga([H|T],Rez,Col):-adauga(T,Rez,Col1),
+    Col=[H|Col1].
+
+inloc_aux([],_,_,Rez,Rez):-!.
+
+inloc_aux([H|T],E,L,Col,Rez):- H=E,! ,
+    adauga(Col,L,Rez1),
+    inloc_aux(T,E,L,Rez1,Rez).
+
+inloc_aux([H|T],E,L,Col,Rez):-
+    H\= E,
+    adauga(Col,[H],Rez1),
+    substituie_aux(T,E,L,Rez1,Rez).
+
+inloc(L,E,T,Rez):-inloc_aux(L,E,T,[],Rez).
+
+primul([H|_],H).
+
+adaugaSf(E,[],[E]):-!.
+adaugaSf(E,[H|T],[H|L]):-
+    adaugaSf(E,T,L).
+
+subst_aux([],_,Rez,Rez):-!.
+
+subst_aux([H|T],L,Col,Rez):- is_list(H),! ,
+    primul(H,Pr),
+    inloc(H,Pr,L,Rez1),
+    adaugaSf(Rez1, Col,Rez2),
+    subst_aux(T,L,Rez2,Rez).
+
+subst_aux([H|T],L,Col,Rez):-
+    adaugaSf(H,Col,Rez1),
+    subst_aux(T,L,Rez1,Rez).
+subst(L,K,Rez):- subst_aux(L,K,[],Rez).
+
+
+

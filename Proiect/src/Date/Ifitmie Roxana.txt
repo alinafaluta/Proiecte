@@ -1,0 +1,6 @@
+Tema: 8
+Nota: 10.0
+Predata in saptamana: 8
+Deadline: 10
+Feedback: BV
+

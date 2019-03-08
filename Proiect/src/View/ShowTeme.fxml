@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="437.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="View.ProfesorController">
+  <children>
+    <ImageView fitHeight="563.0" fitWidth="680.0" layoutX="-95.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+      </image>
+    </ImageView>
+    <TableView fx:id="TabelCuTeme" layoutX="23.0" layoutY="23.0" prefHeight="517.0" prefWidth="392.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="60.0" text="NrTema">
+          <cellValueFactory>
+            <PropertyValueFactory property="nrTema" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="180.0" text="Descriere">
+          <cellValueFactory>
+            <PropertyValueFactory property="descriere" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="75.0" text="Predare">
+          <cellValueFactory>
+            <PropertyValueFactory property="predare" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="75.0" text="Deadline">
+          <cellValueFactory>
+            <PropertyValueFactory property="deadline" />
+          </cellValueFactory>
+        </TableColumn>
+      </columns>
+      <stylesheets>
+        <URL value="@incercam.css" />
+      </stylesheets>
+    </TableView>
+  </children>
+</AnchorPane>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="View.ProfesorController">
+  <children>
+    <TableView fx:id="tabelCuNote" layoutX="250.0" layoutY="173.0" opacity="0.0" prefHeight="454.0" prefWidth="500.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="idStudent">
+          <cellValueFactory>
+            <PropertyValueFactory property="idStudent" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="123.0" text="Student">
+          <cellValueFactory>
+            <PropertyValueFactory property="nume" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="47.0" text="Grupa">
+          <cellValueFactory>
+            <PropertyValueFactory property="grupa" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="55.0" text="nrTema">
+          <cellValueFactory>
+            <PropertyValueFactory property="tema" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="49.0" text="Nota">
+          <cellValueFactory>
+            <PropertyValueFactory property="nota" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="150.0" text="Feedback">
+          <cellValueFactory>
+            <PropertyValueFactory property="feedback" />
+          </cellValueFactory>
+        </TableColumn>
+      </columns>
+    </TableView>
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="800.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+      <stylesheets>
+        <URL value="@tabHeader.css" />
+      </stylesheets>
+      <tabs>
+        <Tab style="-fx-background-color:linear-gradient(#2A3F76,#A3AFC5);" text="Note">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="">
+              <children>
+                <ImageView fitHeight="769.0" fitWidth="1230.3999434267273" layoutX="-46.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+                  </image>
+                </ImageView>
+                <TextField fx:id="NotaTextField" layoutX="106.0" layoutY="520.0" prefHeight="34.48046875" prefWidth="51.0" promptText="Nota" style="-fx-background-color:  #DAe3E9" text="">
+                  <effect>
+                    <DropShadow color="#006299" height="81.0" radius="40.0" width="81.0" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Nota este un numar cu virgula de tipul a.b nu a,b" />
+                  </tooltip>
+                </TextField>
+                <Button id="filtreazaNoteButon" fx:id="filtreazaNoteButon2" layoutX="142.0" layoutY="20.0" mnemonicParsing="false" opacity="0.0" prefHeight="80.0" prefWidth="80.0" text="Filtreaza">
+                  <tooltip>
+                    <Tooltip text="Cauta note in functie de datele din campurile alaturate" />
+                  </tooltip>
+                </Button>
+                <ComboBox id="FiltrareStudentiSUSComboBox" fx:id="FiltrareStudentiSUSComboBox2" layoutX="308.0" layoutY="525.0" onAction="#handleFiltrareStudenti" opacity="0.0" prefHeight="21.0" prefWidth="151.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Toate grupele" />
+                      <String fx:value="Grupa221" />
+                      <String fx:value="Grupa222" />
+                      <String fx:value="Grupa223" />
+                      <String fx:value="Grupa224" />
+                      <String fx:value="Grupa225" />
+                      <String fx:value="Grupa226" />
+                      <String fx:value="Grupa227" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <TextArea fx:id="FeedbackTextArea" layoutX="253.0" layoutY="504.0" prefHeight="111.0" prefWidth="193.9998779296875" promptText="Feedback" style="-fx-background-color: linear-gradient( #DAe3E9,#92b6ef)&#10;" wrapText="true">
+                  <effect>
+                    <DropShadow height="99.61904761904762" radius="49.30952380952381" width="99.61904761904762">
+                      <color>
+                        <Color blue="0.400" green="0.160" red="0.000" fx:id="x1" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Feedback pentru student legat de realizarea temei" />
+                  </tooltip>
+                </TextArea>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="906.0" layoutY="675.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="#66c8ff" height="41.15873015873016" radius="20.07936507936508" width="41.15873015873016" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Back.png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="backButonDinNote" layoutX="906.0" layoutY="675.0" mnemonicParsing="false" onAction="#handleBackDInNote" opacity="0.0" prefHeight="80.0" prefWidth="80.0" text="Button">
+                  <effect>
+                    <DropShadow color="#cce0ff" height="1.0" radius="0.0" width="1.0" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Inapoi la meniu" />
+                  </tooltip>
+                </Button>
+                <CheckBox fx:id="motivatchehc" layoutX="384.0" layoutY="392.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="38.0" style="-fx-color:  #DAe3E9" text="">
+                  <effect>
+                    <DropShadow color="$x1" height="33.25396825396825" radius="16.126984126984127" width="33.25396825396825">
+                      <input>
+                        <ColorAdjust contrast="0.4580152671755724" />
+                      </input>
+                    </DropShadow>
+                  </effect>
+                  <font>
+                    <Font name="Vladimir Script" size="30.0" />
+                  </font>
+                  <tooltip>
+                    <Tooltip text="Daca este selectat atunci nu se va mai lua in considerare penalizarea corespunzatoare unei eventuale intarzieri" />
+                  </tooltip>
+                </CheckBox>
+                <ComboBox fx:id="SaptamanaCOmbo" layoutX="222.0" layoutY="353.0" prefHeight="21.0" prefWidth="116.0" promptText="Saptamana">
+                  <effect>
+                    <DropShadow color="$x1" height="81.0" radius="40.0" width="81.0" />
+                  </effect>
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="1" />
+                      <String fx:value="2" />
+                      <String fx:value="3" />
+                      <String fx:value="4" />
+                      <String fx:value="5" />
+                      <String fx:value="6" />
+                      <String fx:value="7" />
+                      <String fx:value="8" />
+                      <String fx:value="9" />
+                      <String fx:value="10" />
+                      <String fx:value="11" />
+                      <String fx:value="12" />
+                      <String fx:value="13" />
+                      <String fx:value="14" />
+                    </FXCollections>
+                  </items>
+                  <stylesheets>
+                    <URL value="@comboBox.css" />
+                  </stylesheets>
+                  <tooltip>
+                    <Tooltip text="Saptamana curenta sau cea in care ar fi trebuit sa fie puse notele, asta in cazul unei intrazieri la acordarea notelor" />
+                  </tooltip>
+                </ComboBox>
+                <Text layoutX="243.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feedback:">
+                  <font>
+                    <Font name="Vladimir Script" size="40.0" fx:id="x5" />
+                  </font>
+                </Text>
+                <Text font="$x5" layoutX="98.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota:" />
+                <Text font="$x5" layoutX="81.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota se acorda in saptamana:" />
+                <Text font="$x5" layoutX="106.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Studentul a lipsit" />
+                <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="906.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x1" height="128.0" radius="63.5" width="128.0" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/info.png" />
+                  </image>
+                </ImageView>
+                <Button layoutX="906.0" layoutY="30.0" mnemonicParsing="false" opacity="0.0" prefHeight="70.0" prefWidth="70.0" text="Button">
+                  <tooltip>
+                    <Tooltip text="" />
+                  </tooltip>
+                </Button>
+                <GridPane layoutX="530.0" layoutY="130.0" prefHeight="510.0" prefWidth="380.0">
+                  <children>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                      <effect>
+                        <DropShadow height="81.0" radius="40.0" width="81.0">
+                          <color>
+                            <Color blue="0.625" green="0.625" red="0.625" fx:id="x3" />
+                          </color>
+                        </DropShadow>
+                      </effect>
+                      <image>
+                        <Image url="@../Media/graduate-student-avatar.png" />
+                      </image>
+                    </ImageView>
+                    <Button fx:id="ButonShowStudenti" mnemonicParsing="false" onAction="#handleButonShowStudenti" opacity="0.0" prefHeight="150.0" prefWidth="150.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                      <tooltip>
+                        <Tooltip text="Afiseaza studenti in functie de criteriul ales mai sus" />
+                      </tooltip>
+                    </Button>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                      <effect>
+                        <DropShadow height="81.0" radius="40.0" width="81.0">
+                          <color>
+                            <Color blue="1.000" green="0.760" red="0.600" fx:id="x2" />
+                          </color>
+                        </DropShadow>
+                      </effect>
+                      <image>
+                        <Image url="@../Media/clipboard%20(1).png" />
+                      </image>
+                    </ImageView>
+                    <Button fx:id="ButonShowTEME" mnemonicParsing="false" onAction="#handleButonShowTeme" opacity="0.0" prefHeight="150.0" prefWidth="150.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                      <tooltip>
+                        <Tooltip text="Afiseaza toate temele" />
+                      </tooltip>
+                    </Button>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                      <effect>
+                        <DropShadow color="#000833" height="81.0" radius="40.0" width="81.0" />
+                      </effect>
+                      <image>
+                        <Image url="@../Media/media!).png" />
+                      </image>
+                    </ImageView>
+                    <Button fx:id="Primii10Button" mnemonicParsing="false" onAction="#handlePrimii10" opacity="0.0" prefHeight="150.0" prefWidth="150.0" text="primii10" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                      <tooltip>
+                        <Tooltip text="Exporta in format PDF toti studentii cu media 10" />
+                      </tooltip>
+                    </Button>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                      <effect>
+                        <DropShadow color="$x2" height="81.0" radius="40.0" width="81.0" />
+                      </effect>
+                      <image>
+                        <Image url="@../Media/school-bell.png" />
+                      </image>
+                    </ImageView>
+                    <Button fx:id="MediaSub5Button" mnemonicParsing="false" onAction="#handleMediaSub5" opacity="0.0" prefHeight="150.0" prefWidth="150.0" text="mediaSUb5" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                      <tooltip>
+                        <Tooltip text="Exporta in format PDF toti studentii cu media sub 5" />
+                      </tooltip>
+                    </Button>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                      <effect>
+                        <DropShadow color="$x3" height="81.0" radius="40.0" width="81.0" />
+                      </effect>
+                      <image>
+                        <Image url="@../Media/add-file.png" />
+                      </image>
+                    </ImageView>
+                    <Button fx:id="AdaugaNotaBUtton" mnemonicParsing="false" onAction="#handleAddNota" opacity="0.0" prefHeight="150.0" prefWidth="150.0" text="Adauga" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                      <tooltip>
+                        <Tooltip text="Adauga Nota" />
+                      </tooltip>
+                    </Button>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                      <effect>
+                        <DropShadow color="#002966" height="81.0" radius="40.0" width="81.0" />
+                      </effect>
+                      <image>
+                        <Image url="@../Media/note-512.png" />
+                      </image>
+                    </ImageView>
+                    <Button fx:id="ArataToateNoteleButon" mnemonicParsing="false" onAction="#handleArataToateNotele" opacity="0.0" prefHeight="150.0" prefWidth="150.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints maxHeight="170.0" minHeight="10.0" prefHeight="170.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="170.0" minHeight="10.0" prefHeight="170.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="170.0" minHeight="10.0" prefHeight="170.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                </GridPane>
+                <ComboBox fx:id="idStudentCOMBObox" layoutX="367.0" layoutY="206.0" minHeight="20.0" prefHeight="21.0" prefWidth="80.0" promptText="IdStudent" style="">
+                  <effect>
+                    <DropShadow height="81.0" radius="40.0" width="81.0">
+                      <color>
+                        <Color blue="0.500" green="0.500" red="0.500" fx:id="x4" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <items>
+                    <FXCollections fx:factory="observableArrayList" />
+                  </items>
+                  <stylesheets>
+                    <URL value="@comboBox.css" />
+                  </stylesheets>
+                  <tooltip>
+                    <Tooltip text="Id-ul Studentului caruia vreti sa ii dati o nota" />
+                  </tooltip>
+                </ComboBox>
+                <ComboBox fx:id="idTemaCombobox" layoutX="367.0" layoutY="268.0" prefHeight="22.0" prefWidth="80.0" promptText="idTema" style="">
+                  <effect>
+                    <DropShadow color="$x4" height="81.0" radius="40.0" width="81.0" />
+                  </effect>
+                  <items>
+                    <FXCollections fx:factory="observableArrayList" />
+                  </items>
+                  <stylesheets>
+                    <URL value="@comboBox.css" />
+                  </stylesheets>
+                  <tooltip>
+                    <Tooltip text="id-ul temei la care doriti sa dati nota" />
+                  </tooltip>
+                </ComboBox>
+                <Text font="$x5" layoutX="173.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id-ul temei:" />
+                <Text font="$x5" layoutX="98.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id-ul studentului:" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab style="-fx-background-color:linear-gradient(#2A3F76,#A3AFC5);" text="Rapoarte">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ImageView fitHeight="769.0" fitWidth="1230.4000450585982" layoutX="-43.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+                  </image>
+                </ImageView>
+                <PieChart id="PieChart" fx:id="TemePredatePieChart" layoutX="0.0" layoutY="185.0" title="Ponderea Mediilor">
+                  <effect>
+                    <DropShadow color="$x1" height="71.39682539682539" radius="35.198412698412696" spread="0.49206349206349204" width="71.39682539682539" />
+                  </effect>
+                </PieChart>
+                <BarChart fx:id="MediaGrupelorBarChart" layoutX="486.0" layoutY="185.0" title="Media Grupelor">
+                  <xAxis>
+                    <CategoryAxis fx:id="grupaBara" label="Grupa" side="BOTTOM" tickLabelFill="WHITE">
+                      <tickLabelFont>
+                        <Font name="System Bold" size="10.0" fx:id="x6" />
+                      </tickLabelFont>
+                    </CategoryAxis>
+                  </xAxis>
+                  <yAxis>
+                    <NumberAxis fx:id="mediaBara" label="Media" side="LEFT" tickLabelFill="WHITE" tickLabelFont="$x6" />
+                  </yAxis>
+                  <effect>
+                    <DropShadow color="$x1" height="137.9206349206349" radius="68.46031746031746" width="137.9206349206349" />
+                  </effect>
+                </BarChart>
+                <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="411.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../Media/pdf-icon-round.png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="exportRapoarteNotePDF" layoutX="411.0" layoutY="596.0" mnemonicParsing="false" onAction="#handleExportRapoarte" opacity="0.0" prefHeight="150.0" prefWidth="150.0" text="Button">
+                  <tooltip>
+                    <Tooltip text="exporta sub format pdf datele din graficul &quot;media grupelor&quot;" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="906.0" layoutY="675.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="#66edff" height="38.66666666666667" radius="18.833333333333336" width="38.66666666666667" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Back.png" />
+                  </image>
+                </ImageView>
+                <Button id="backDinRapoarteButton" fx:id="backDinRapoarteNoteButton" layoutX="906.0" mnemonicParsing="false" onAction="#handleBackDinRapoarteNote" opacity="0.0" prefHeight="80.0" prefWidth="80.0" text="Button" AnchorPane.topAnchor="675.0">
+                  <tooltip>
+                    <Tooltip text="Inapoi la meniu" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="906.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="#001066" height="128.0" radius="63.5" width="128.0" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/info.png" />
+                  </image>
+                </ImageView>
+                <Button mnemonicParsing="false" opacity="0.0" prefHeight="70.0" prefWidth="70.0" text="Button" AnchorPane.bottomAnchor="669.0" AnchorPane.leftAnchor="906.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="30.0">
+                  <effect>
+                    <DropShadow color="#004166" height="128.0" radius="63.5" width="128.0" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Daca tineti mouse-ul pe orice camp sau buton se vor afisa informatii despre ce date trebuie inserate sau despre ce face fiecare buton" />
+                  </tooltip>
+                </Button>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

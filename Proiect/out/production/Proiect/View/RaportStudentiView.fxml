@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="1147.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="View.StudentController">
+  <children>
+    <ImageView fitHeight="716.125" fitWidth="1145.8000468648565" layoutX="0.0" layoutY="-54.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+      </image>
+    </ImageView>
+    <PieChart id="PieChart" fx:id="studentiInGrupePieChart" layoutX="97.0" layoutY="133.0" prefHeight="343.0" prefWidth="446.0" title="Ponderea studentilor in grupe">
+      <effect>
+        <DropShadow height="30.60317460317461" radius="14.801587301587306" spread="0.09523809523809523" width="30.60317460317461">
+          <color>
+            <Color blue="0.400" green="0.064" red="0.000" fx:id="x2" />
+          </color>
+        </DropShadow>
+      </effect>
+    </PieChart>
+    <BarChart fx:id="eleviPerProfesorBarChart" layoutX="614.0" layoutY="76.0" title="Numar de elevi per profesor">
+      <xAxis>
+        <CategoryAxis fx:id="ProfesorBaraAxa" label="Profesor" side="BOTTOM" tickLabelFill="WHITE">
+          <effect>
+            <DropShadow color="#dfdfdf" height="15.11111111111111" radius="7.055555555555555" width="15.11111111111111" />
+          </effect>
+          <tickLabelFont>
+            <Font name="System Bold Italic" size="16.0" fx:id="x1" />
+          </tickLabelFont>
+        </CategoryAxis>
+      </xAxis>
+      <yAxis>
+        <NumberAxis fx:id="Studentiaxa" label="Studenti" side="LEFT" tickLabelFont="$x1" />
+      </yAxis>
+      <effect>
+        <DropShadow color="$x2" height="35.11111111111111" radius="17.055555555555554" width="35.11111111111111" />
+      </effect>
+    </BarChart>
+    <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="534.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="#080066" height="37.12698412698413" radius="18.063492063492063" width="37.12698412698413" />
+      </effect>
+      <image>
+        <Image url="@../Media/pdf-icon-round.png" />
+      </image>
+    </ImageView>
+    <Button fx:id="ExportRapoarte" layoutX="534.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleExportRapoarte" opacity="0.0" prefHeight="90.0" prefWidth="90.0" text="export" />
+  </children>
+</AnchorPane>

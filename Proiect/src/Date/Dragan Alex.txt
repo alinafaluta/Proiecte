@@ -1,0 +1,18 @@
+Tema: 10
+Nota: 10.0
+Predata in saptamana: 9
+Deadline: 14
+Feedback: E ok 
+
+Tema: 9
+Nota: 9.0
+Predata in saptamana: 9
+Deadline: 12
+Feedback: Ai omis cateva cazuri de validare!
+
+Tema: 8
+Nota: 10.0
+Predata in saptamana: 8
+Deadline: 10
+Feedback: perfect
+

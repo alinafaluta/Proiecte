@@ -1,0 +1,3 @@
+﻿  lista.cpp
+d:\laborator1-plf\laborator1-plf\lista.h(17): warning C4091: 'typedef ': ignored on left of 'Nod' when no variable is declared
+  Laborator1-PLF.vcxproj -> D:\Laborator1-PLF\Debug\Laborator1-PLF.exe

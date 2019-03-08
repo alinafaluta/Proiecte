@@ -1,0 +1,72 @@
+Tema: 1
+Nota: 8.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: Feed
+
+Tema: 1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 2
+Feedback: Felicitari!
+
+Tema: 2
+Nota: 9.0
+Predata in saptamana: 2
+Deadline: 3
+Feedback: Felicitari!
+
+Tema: 3
+Nota: 10.0
+Predata in saptamana: 3
+Deadline: 5
+Feedback: Felicitari!
+
+Tema: 4
+Nota: 10.0
+Predata in saptamana: 4
+Deadline: 6
+Feedback: Felicitari!
+
+Tema: 5
+Nota: 10.0
+Predata in saptamana: 5
+Deadline: 7
+Feedback: Felicitari!
+
+Tema: 6
+Nota: 10.0
+Predata in saptamana: 6
+Deadline: 8
+Feedback: Felicitari!
+
+Tema: 6
+Nota: 10.0
+Predata in saptamana: 6
+Deadline: 8
+Feedback: Felicitari! You did a good Job.
+
+Tema: 7
+Nota: 10.0
+Predata in saptamana: 7
+Deadline: 9
+Feedback: Felicitari! You did a good Job.
+
+Tema: 8
+Nota: 10.0
+Predata in saptamana: 8
+Deadline: 10
+Feedback: Felicitari! You did a good Job.
+
+Tema: 9
+Nota: 10.0
+Predata in saptamana: 9
+Deadline: 12
+Feedback: Felicitari! You did a good Job.
+
+Tema: 10
+Nota: 10.0
+Predata in saptamana: 9
+Deadline: 14
+Feedback: Felicitari! You did a good Job.
+

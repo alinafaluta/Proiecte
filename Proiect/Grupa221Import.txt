@@ -1,0 +1,58 @@
+ALISTAR	I ANDREI,221,Serban C,stud@gmail.com
+AMARANDEI M.C. ROBERT-ANDREI,221,Serban C,stud@yahoo.com
+ANTINIE	G.R. RADU,221,Serban C,stud@yahoo.com
+ANTON	AL MIHAI,221,Serban C,stud@yahoo.com
+ARDELEAN F. A.	ALEXANDRU FLORIAN,221,Serban C,stud@yahoo.com
+ARDELEAN T TUDOR BOGDAN,221,Serban C,stud@yahoo.com
+AVRAM	V.I. VASILE-COSMIN,221,Serban C,stud@yahoo.com
+BACO?IU	C.V. OCTAVIAN-GABRIEL,221,Serban C,stud@yahoo.com
+BADEA	I.M IOANA MIRUNA,221,Serban C,stud@yahoo.com
+BADI?A	N MARIN-GEORGIAN,221,Serban C,stud@yahoo.com
+BAJAN	B. VLAD,221,Serban C,stud@yahoo.com
+BARAC-ANTONESCU	F SAMUEL,221,Serban C,stud@yahoo.com
+BARBOS	I. IRINA-LARISA,221,Serban C,stud@yahoo.com
+BU?TEAGA	VC	MIHAIL,222,Pop Emilia,stud@yahoo.com
+CARBUNE	FA	FLORINA-IOANA,222,Pop Emilia,stud@yahoo.com
+CARP	D	MARA ALEXANDRA,222,Pop Emilia,stud@yahoo.com
+CAZACU	R.	IOANA-ARINA,222,Pop Emilia,stud@yahoo.com
+CERNAIANU	C	MIHAI-IONUT,222,Pop Emilia,stud@yahoo.com
+CHELARU	I	IOANA-GABRIELA,222,Pop Emilia,stud@yahoo.com
+CHELE	V	VALENTINA,222,Pop Emilia,stud@yahoo.com
+CHIRICA	M	CRISTIAN-NEEMIA,222,Pop Emilia,stud@yahoo.com
+CHIRITOIU	G	ANDREI,222,Pop Emilia,stud@yahoo.com
+CILEAN	I	LILIANA-FLORINA,222,Pop Emilia,stud@yahoo.com
+CIOBANU	I	PAUL - GAVRIL,222,Andor M,stud@yahoo.com
+CIOVNICU	C	NARCIS-GEORGE,222,Andor M,stud@yahoo.com
+CIRSTEA	R	TEODOR STEFAN,222,Andor M,stud@scs.com
+COJOCAR	V.	TEODORA-LUCIA,222,Andor M,stud@scs.com
+COMAN	M	LUIZA-MIHAELA,222,Andor M,stud@scs.com
+CORCAN	O	RADU,222,Andor M,stud@scs.com
+COSTRÂ?	N	ALEXANDRA,222,Andor M,stud@scs.com
+CRACIUN	T	DAN,222,Andor M,stud@scs.com
+CRACIUN	A.M.	ALEXANDRU-MIHAIL,222,Andor M,stud@scs.com
+CRISTEA	O	OANA BIANCA,222,Andor M,stud@scs.com
+CUCUIET	M	SILVIU-MIHNEA,222,Andor M,stud@scs.com
+DAMSA	V. S.	PAUL STEFAN,222,Andor M,stud@scs.com
+MEDAN	D	FLORIN-ANDREI,222,Andor M,stud@scs.com
+FARCA?	F	ALEXANDRU-FLORIN,223,Serban C,stud@gmail.com
+FEIER	G. D.	MIHAI DANIEL,223,Serban C,stud@gmail.com
+FILIPOIU	C	GEORGE,223,Serban C,stud@gmail.com
+FIRANDA	G.-M.	ANDRADA - DENYSA,223,Serban C,stud@gmail.com
+FÎRDEA-MUSTEA	V.G.	TEREZA-ANAMARIA,223,Serban C,stud@gmail.com
+FORGACS	N.D.	AMELIA-CORINA,223,Serban C,stud@gmail.com
+FRENT	A	ALEXANDRU-IONUT,223,Serban C,stud@gmail.com
+GAIDOS	?	BENJAMIN,223,Serban C,stud@gmail.com
+GAIDUR	M	IOAN,223,Serban C,stud@gmail.com
+GALAN	O	RADU,223,Serban C,stud@gmail.com
+GA?PAR	T	PATRICIA LORENA,223,Serban C,stud@gmail.com
+GAZDA	I	ALEXANDRA,223,Serban C,stud@gmail.com
+GHEORGHIU	L.P.	DRAGO?-CONSTANTIN,223,Pop Emilia,stud@gmail.com
+GHIOCI	T	VLAD-STEFAN,223,Pop Emilia,stud@gmail.com
+GÎNGA	I	TUDOR-ADRIAN,223,Pop Emilia,stud@gmail.com
+GIURGIU	M	SEBASTIAN MIRCEA,223,Pop Emilia,stud@gmail.com
+MONDOC	L.G.	ROBERT,223,Pop Emilia,stud@gmail.com
+MURESAN	P.	BOGDAN-EMANUEL,223,Pop Emilia,stud@gmail.com
+OPRINCA	I.R.	ALEXANDRU,223,Pop Emilia,stud@gmail.com
+SIKOLYA	I.	DAVID-ISTVAN,223,Pop Emilia,stud@gmail.com
+
+

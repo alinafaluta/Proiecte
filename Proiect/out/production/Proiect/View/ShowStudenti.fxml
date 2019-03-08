@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" disable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="true" prefHeight="563.0" prefWidth="437.0" snapToPixel="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="View.ProfesorController">
+  <children>
+    <ImageView fitHeight="563.0" fitWidth="680.0" layoutX="-94.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+      </image>
+    </ImageView>
+    <TableView fx:id="TabelCuStudenti" layoutX="4.0" layoutY="23.0" prefHeight="460.0" prefWidth="429.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" text="IdStudent">
+          <cellValueFactory>
+            <PropertyValueFactory property="idStudent" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="136.0" text="Nume">
+          <cellValueFactory>
+            <PropertyValueFactory property="nume" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="49.0" text="Grupa">
+          <cellValueFactory>
+            <PropertyValueFactory property="grupa" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="85.0" text="Profesor">
+          <cellValueFactory>
+            <PropertyValueFactory property="profesor" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="108.0" text="Email">
+          <cellValueFactory>
+            <PropertyValueFactory property="email" />
+          </cellValueFactory>
+        </TableColumn>
+      </columns>
+      <stylesheets>
+        <URL value="@incercam.css" />
+      </stylesheets>
+    </TableView>
+    <ComboBox id="FiltrareStudentiSUSComboBOx" fx:id="FiltrareStudentiSUSComboBox" layoutX="151.0" layoutY="514.0" onAction="#handleFiltrareStudenti" prefHeight="21.0" prefWidth="135.0" promptText="Grupe">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Toate grupele" />
+        </FXCollections>
+      </items>
+      <stylesheets>
+        <URL value="@comboBox.css" />
+      </stylesheets>
+    </ComboBox>
+  </children>
+</AnchorPane>

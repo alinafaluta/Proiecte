@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPaneTeme" fx:id="TemeAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="View.ProfesorController">
+  <children>
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="800.0" prefWidth="1000.0" style="" tabClosingPolicy="UNAVAILABLE">
+      <stylesheets>
+        <URL value="@tabHeader.css" />
+      </stylesheets>
+      <tabs>
+        <Tab style="-fx-background-color:linear-gradient(#2A3F76,#A6B2C8);" text="Gestionare Teme">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="800.0">
+              <children>
+                <ImageView fitHeight="769.0" fitWidth="1230.4" layoutX="-99.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+                  </image>
+                </ImageView>
+                <TableView fx:id="TableViewTeme" editable="true" layoutX="94.0" layoutY="125.0" opacity="1.0" prefHeight="451.0" prefWidth="406.0">
+                  <columns>
+                    <TableColumn prefWidth="75.0" text="NrTema" fx:id="LabelNrTema">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="nrTema" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn id="LabelDescriere" maxWidth="5000.0" minWidth="10.0" prefWidth="179.0" text="Descriere" fx:id="DescriereC">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="descriere" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn id="LabelPredare" prefWidth="75.0" text="Predare" fx:id="Predarec">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="predare" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn id="LabelDeadline" prefWidth="75.0" text="Deadline" fx:id="Deadline">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="deadline" />
+                      </cellValueFactory>
+                    </TableColumn>
+                  </columns>
+                  <effect>
+                    <DropShadow height="43.17460317460317" radius="21.087301587301585" width="43.17460317460317">
+                      <color>
+                        <Color blue="0.400" green="0.064" red="0.000" fx:id="x1" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <stylesheets>
+                    <URL value="@incercam.css" />
+                  </stylesheets>
+                </TableView>
+                <TextField fx:id="DeadlineTextField" layoutX="695.0" layoutY="440.0" prefWidth="200.0" promptText="Deadline(Saptamana)">
+                  <effect>
+                    <DropShadow color="$x1" height="41.15873015873016" radius="20.07936507936508" width="41.15873015873016" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Saptamana este o valoare intre 1 si 14" />
+                  </tooltip>
+                </TextField>
+                <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="557.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow height="41.15873015873016" radius="20.07936507936508" width="41.15873015873016">
+                      <color>
+                        <Color blue="0.200" green="0.000" red="0.016" fx:id="x5" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <image>
+                    <Image url="@../Media/folder%20(1).png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="AdaugaTemaButton" layoutX="557.0" layoutY="495.0" mnemonicParsing="false" onAction="#handleAddTema" opacity="0.0" prefHeight="101.0" prefWidth="101.0" text="Adauga">
+                  <tooltip>
+                    <Tooltip text="Apasati pentru a adauga tema" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="702.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x5" height="41.0" radius="20.0" width="41.0" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/folder%20(2).png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="UpdateTemaButton" layoutX="702.0" layoutY="495.0" mnemonicParsing="false" onAction="#handleUpdateTema" opacity="0.0" prefHeight="101.0" prefWidth="101.0" text="Update">
+                  <tooltip>
+                    <Tooltip text="Apasati pentru a modifica tema" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="845.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x5" height="41.0" radius="20.0" width="41.0" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/folder.png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="DeleteTemaButton" layoutX="845.0" layoutY="495.0" mnemonicParsing="false" onAction="#handleDeleteTema" opacity="0.0" prefHeight="101.0" prefWidth="101.0" text="Sterge">
+                  <tooltip>
+                    <Tooltip text="Empty TooltipApasati pentru a sterge tema" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="906.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="675.0">
+                  <effect>
+                    <DropShadow height="81.0" radius="40.0" spread="0.1349206349206349" width="81.0">
+                      <color>
+                        <Color blue="1.000" green="0.784" red="0.400" fx:id="x4" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Back.png" />
+                  </image>
+                </ImageView>
+                <Button id="BackButton" fx:id="BackButton2" mnemonicParsing="false" onAction="#BackToMain" opacity="0.0" prefHeight="79.99990000000253" prefWidth="79.99990000000253" text="Back" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="906.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="675.0">
+                  <tooltip>
+                    <Tooltip text="Inapoi la pagina de conectare" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="595.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="#606060" height="41.15873015873016" radius="20.07936507936508" width="41.15873015873016" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/NumarulTemei.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="37.092716217041016" fitWidth="127.2421060401168" layoutX="607.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow height="51.238095238095234" radius="25.119047619047617" width="51.238095238095234">
+                      <color>
+                        <Color blue="0.500" green="0.500" red="0.500" fx:id="x3" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Descriere.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="41.87171936035156" fitWidth="125.61515808105469" layoutX="607.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="#99a9ff" height="51.238095238095234" radius="25.119047619047617" spread="0.15873015873015872" width="51.238095238095234" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Predare.png" />
+                  </image>
+                </ImageView>
+                <TextField fx:id="PredareTextField" layoutX="695.0" layoutY="351.0" prefWidth="200.0" promptText="Predare (saptamana)">
+                  <effect>
+                    <DropShadow color="#99daff" height="33.095238095238095" radius="16.047619047619047" width="33.095238095238095" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Saptamana este o valoare intre 1 si 14" />
+                  </tooltip>
+                </TextField>
+                <TextField fx:id="DescriereTextField" layoutX="695.0" layoutY="257.0" prefWidth="200.0" promptText="Descriere">
+                  <effect>
+                    <DropShadow color="$x3" height="35.11111111111111" radius="17.055555555555554" width="35.11111111111111" />
+                  </effect>
+                </TextField>
+                <TextField fx:id="NrTemaTextField" layoutX="695.0" layoutY="178.0" prefWidth="200.0" promptText="NrTema">
+                  <effect>
+                    <DropShadow color="$x3" height="27.047619047619047" radius="13.023809523809524" width="27.047619047619047" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Numarul temei este numar natural" />
+                  </tooltip>
+                </TextField>
+                <ImageView fitHeight="37.09270477294922" fitWidth="129.33640986937993" layoutX="607.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow height="49.22222222222222" radius="24.11111111111111" width="49.22222222222222">
+                      <color>
+                        <Color blue="0.600" green="0.239" red="0.000" fx:id="x6" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Deadline.png" />
+                  </image>
+                </ImageView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab style="-fx-background-color:linear-gradient(#2A3F76,#A6B2C8);&#10;" text="Filtrari">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="800.0">
+              <children>
+                <ImageView fitHeight="769.0" fitWidth="1230.4" layoutX="-93.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../Media/8589130423107-blue-mountains-landscape-wallpaper-hd%20(1).jpg" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="43.922607421875" fitWidth="411.2753411563669" layoutX="20.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="#001899" height="63.33333333333333" radius="31.166666666666664" spread="0.4523809523809524" width="63.33333333333333" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/TemePredate.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="43.92263603210449" fitWidth="383.22500056789517" layoutX="20.0" layoutY="588.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x6" height="9.063492063492063" radius="4.031746031746032" spread="0.23809523809523808" width="9.063492063492063" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/CuDeadline.png" />
+                  </image>
+                </ImageView>
+                <BarChart fx:id="BarChartCuStudentiTeme" layoutX="479.0" layoutY="172.0" title="Numarul de Studenți/temă">
+                  <xAxis>
+                    <CategoryAxis fx:id="TemaBARA" label="Numărul Temei" side="BOTTOM">
+                      <tickLabelFont>
+                        <Font name="System Bold" size="10.0" fx:id="x2" />
+                      </tickLabelFont>
+                    </CategoryAxis>
+                  </xAxis>
+                  <yAxis>
+                    <NumberAxis fx:id="StudentiBara" label="Studenți" side="LEFT" tickLabelFont="$x2" />
+                  </yAxis>
+                  <effect>
+                    <DropShadow color="#002966" height="97.76190476190476" radius="48.38095238095238" width="97.76190476190476" />
+                  </effect>
+                </BarChart>
+                <TableView id="TableViewTeme" fx:id="FiltrariTeme" layoutX="53.0" layoutY="172.0" opacity="1.0" prefHeight="330.0" prefWidth="405.0">
+                  <columns>
+                    <TableColumn prefWidth="75.0" text="NrTema" fx:id="nrTemaFiltrari">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="nrTema" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn id="LabelDescriere" maxWidth="5000.0" minWidth="10.0" prefWidth="180.0" text="Descriere" fx:id="descriereFiltrari">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="descriere" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn id="LabelPredare" prefWidth="75.0" text="Predare" fx:id="PredareFiltrari">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="predare" />
+                      </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn id="LabelDeadline" prefWidth="75.0" text="Deadline" fx:id="DeadlineFiltrare">
+                      <cellValueFactory>
+                        <PropertyValueFactory property="deadline" />
+                      </cellValueFactory>
+                    </TableColumn>
+                  </columns>
+                  <effect>
+                    <DropShadow color="#040033" height="81.47619047619048" radius="40.23809523809524" spread="0.015873015873015872" width="81.47619047619048" />
+                  </effect>
+                  <stylesheets>
+                    <URL value="@incercam.css" />
+                  </stylesheets>
+                </TableView>
+                <TextField id="Predare" fx:id="PredareinSapt" layoutX="119.0" layoutY="565.0" onAction="#handleFiltrare" prefWidth="200.0" promptText="Predate in saptamana" style="-fx-background-color:#DAe3E9">
+                  <effect>
+                    <DropShadow color="#66a3ff" height="81.0" radius="40.0" spread="0.3" width="81.0" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Saptamana este o valoare intre 1 si 14" />
+                  </tooltip>
+                </TextField>
+                <TextField id="Deadline" fx:id="DeadlineinSapt" layoutX="119.0" layoutY="632.0" onAction="#handleFiltrare" prefWidth="200.0" promptText="Cu deadline in saptamana" style="-fx-background-color:#DAe3E9">
+                  <effect>
+                    <DropShadow color="#000833" height="81.0" radius="40.0" width="81.0" />
+                  </effect>
+                  <tooltip>
+                    <Tooltip text="Saptamana este o valoare intre 1 si 14" />
+                  </tooltip>
+                </TextField>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="906.0" layoutY="675.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow color="$x4" height="45.19047619047619" radius="22.095238095238095" width="45.19047619047619" />
+                  </effect>
+                  <image>
+                    <Image url="@../Media/Back.png" />
+                  </image>
+                </ImageView>
+                <Button fx:id="BackButton" mnemonicParsing="false" onAction="#BackToMain" opacity="0.0" prefHeight="80.0" prefWidth="80.0" text="Back" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="906.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="675.0">
+                  <tooltip>
+                    <Tooltip text="Inapoi la pagina de conectare" />
+                  </tooltip>
+                </Button>
+                <ImageView fitHeight="62.0" fitWidth="62.0" layoutX="409.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../Media/reading.png" />
+                  </image>
+                </ImageView>
+                <Button id="FiltrareButton" fx:id="FiltrareTemeButton" layoutX="408.0" layoutY="579.0" mnemonicParsing="false" onAction="#handleFiltrare" opacity="0.0" prefHeight="61.922607421875" prefWidth="65.0" text="Filtrare">
+                  <tooltip>
+                    <Tooltip text="Se filtreaza datele din tabel dupa valorile din cele doua campuri alaturate" />
+                  </tooltip>
+                </Button>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

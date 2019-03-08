@@ -1,0 +1,42 @@
+%Definiti un predicat care determina suma unui nr reprezentat cifra cu
+% cifra intr-o lista cu o anumita cifra, fara a transforma lista intr-un
+% numar. De exemplu [1 9 3 5 9 9] + 2 -> [1 9 3 6 0 1].
+
+%invers(L:list,R:list)=invers_aux(L:list,Col:list,R:list)
+%L-lista pentru care construim inversa
+%Col-variabila colectoare
+%Rez- lista inversata
+%model de flux(i,i,o) - invers_aux
+%model de flux(i,o)-invers
+invers_aux([],Col,Col):-!.
+invers_aux([H|T],Col,Rez):-invers_aux(T,[H|Col],Rez).
+
+invers(L,R):-invers_aux(L,[],R).
+
+%suma_aux(L:list,C:integer,Col:List,R:List)
+%L - lista in care este numarul reprezentat cifra cu cifra
+%C- cifra pe care o vom aduna la numarul din lista
+%Col - variabila colectoare in care adunam rezultatele invers
+%folosesc colectoare pentru ca voi primi deja lista inversata
+%Rez- noul numar (dupa adunare) reprezentat cifra cu cifra in lista
+%model de flux(i,i,i,o)
+%suma(L:list,C:Integer,R:list)=suma_aux(invers(L),C,[],R)
+%model de flux(i,i,o).
+suma_aux([],C,D,Col,Rez):-D>1,C>0,suma_aux([],C,D,[D|Col],Rez).
+suma_aux([],_,_,Col,Col):-!.
+
+suma_aux([H|T],C,D,Col,Rez):-D >1,!,H1 is C+H, H11 is H1 mod 10,
+    C1 is C+H,C11 is C1 div 10,
+    suma_aux(T,C11,D,[H11|Col],Rez).
+suma_aux([A],C,D,_,Rez):- D =:=1,A1 is A+C, A11 is A1 div 10,
+    A22 is A1 mod 10,
+    A11 =:=0,!,suma_aux([],C,D,[A22],Rez),!.
+suma_aux([A],C,D,_,Rez):- D=:=1,A1 is A+C, A11 is A1 div 10,
+    A22 is A1 mod 10,
+    suma_aux([],C,D,[A11,A22],Rez),!.
+
+suma(L,C,R):- dimensiune(L,NR),invers(L,Re), suma_aux(Re,C,NR,[],R).
+
+dimensiune_aux([],Nr,Nr):-!.
+dimensiune_aux([_|T],Nr,R):-Nr1 is Nr+1,dimensiune_aux(T,Nr1,R).
+dimensiune(L,R):-dimensiune_aux(L,0,R).
