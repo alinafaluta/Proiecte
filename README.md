@@ -1,6 +1,5 @@
 # Proiecte
 <ul>
-  <ul>
 <li type="square">Proiectul personal contine o aplicatie in java, javafx, jdbc, cu interfata construita in Scene Builder
     <ul>
       <li type="circle">Proiect - reprezinta o aplicatie cu interfata grafica, folosind java si javafx, ce simuleaza un catalog. Acesta are 3 tipuri de useri, fiecare avand parolele hardcodate in baza de date. Avem studenti, secretari si profesori. Studentul poate intra sa isi vada notele si media, secretarul adauga studenti si useri, si poate vedea diferite rapoarte pentru studenti/grupe, studenti/profesor, iar profesorul poate face crud pe teme, vizualiza rapoarte , si adauga interactiv note pentru studenti.</li>
@@ -9,7 +8,6 @@
 <li type="square">Fisierul DataBase contine fisiere cu proceduri si comenzi SQL pentru diferite cerinte</li>
   <li type="square">Fisierul Metode Avansate de Programare contine un proiect realizat in C#</li>
 <li type="square">Fisierul Programare Logica si Functionala contine probleme de baza, atat deterministe cat si nedeterministe, rezolvate in Lisp si Prolog</li>
-</ul>
   <li type="square">Fundamentele progrmarii contine aplicatii in python:
     <ul>
       <li>Numere - o aplicatie ce simuleaza un calculator cu operatii elementare pt numere complexe</li>
