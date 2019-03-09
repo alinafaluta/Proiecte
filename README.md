@@ -114,7 +114,7 @@
 </li>
 </ul>
 <ul>
-<li type="square">Proiectul personal contine o aplicatie in java, javafx, cu interfata construita in Scene Builder
+<li type="square">Proiectul personal contine o aplicatie in java, javafx, jdbc, cu interfata construita in Scene Builder
     <ul>
       <li type="circle">Proiect - reprezinta o aplicatie cu interfata grafica, folosind java si javafx, ce simuleaza un catalog. Acesta are 3 tipuri de useri, fiecare avand parolele hardcodate in baza de date. Avem studenti, secretari si profesori. Studentul poate intra sa isi vada notele si media, secretarul adauga studenti si useri, si poate vedea diferite rapoarte pentru studenti/grupe, studenti/profesor, iar profesorul poate face crud pe teme, vizualiza rapoarte , si adauga interactiv note pentru studenti.</li>
     </ul>
