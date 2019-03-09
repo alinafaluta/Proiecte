@@ -69,7 +69,8 @@
                             print("4.Labs from a student")
                             print("5.Students afer lab")
                             print("x-Exit")*/
-                            </li>
+      
+  </li>
                             
   <li>examen - o aplicatie pentru o echipa de fotbal. Importare jucatori se face dintr-un fisier exterior</li>
 
@@ -81,8 +82,8 @@
                                   print('5.Importare jucatori')
                                   print('x.Inchide aplicatia')
 
-              </ul>
-          </li>
+  </ul>
+    </li>
  </ul>
  <ul>
 <li type="square">OOP contine proiecte in c si c++:
@@ -110,7 +111,7 @@
                 cei cu nume incepand cu o litera data,etc)
                 e) Permite sortarea participantilor dupa: nume sau dupa scor (crescator/descrescator)
                 f) Vizualizare oferta filtrate dupa un criteriu (suprafata, tip, pret)/*
-    </ul>
+</ul>
 </li>
 </ul>
 <ul>
