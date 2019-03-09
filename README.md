@@ -1,6 +1,6 @@
 # Proiecte
 <ul>
-  <li type="square">Aplicatii in Python:
+  <li type="square">Fundamentele progrmarii contine aplicatii in python:
     <ul>
       <li>Numere - o aplicatie ce simuleaza un calculator cu operatii elementare pt numere complexe</li>
       <li>Catalog - un catalog pentru studenti</li>
@@ -85,7 +85,7 @@
           </li>
  </ul>
  <ul>
-<li type="square">Aplicatii in C:
+<li type="square">OOP contine proiecte in c si c++:
     <ul>
       <li type="cirlce">lab2-4(dinamic) iar lab2-4_static(static): /*o aplicatie care permite gestiunea ofertelor de la o agentie imobiliara<li>
 
@@ -114,11 +114,12 @@
 </li>
 </ul>
 <ul>
-<li type="square">Aplicatii in Java
+<li type="square">Proiectul personal contine o aplicatie in java, javafx, cu interfata construita in Scene Builder
     <ul>
       <li type="circle">Proiect - reprezinta o aplicatie cu interfata grafica, folosind java si javafx, ce simuleaza un catalog. Acesta are 3 tipuri de useri, fiecare avand parolele hardcodate in baza de date. Avem studenti, secretari si profesori. Studentul poate intra sa isi vada notele si media, secretarul adauga studenti si useri, si poate vedea diferite rapoarte pentru studenti/grupe, studenti/profesor, iar profesorul poate face crud pe teme, vizualiza rapoarte , si adauga interactiv note pentru studenti.</li>
     </ul>
  </li>
 <li type="square">Fisierul DataBase contine fisiere cu proceduri si comenzi SQL pentru diferite cerinte</li>
-<li type="square">Fisierele Lisp si Prolog contin probleme de baza, atat deterministe cat si nedeterministe, rezolvate in Lisp si Prolog</li>
+  <li type="square">Fisierul Metode Avansate de Programare contine un proiect realizat in C#</li>
+<li type="square">Fisierul Programare Logica si Functionala contine probleme de baza, atat deterministe cat si nedeterministe, rezolvate in Lisp si Prolog</li>
 </ul>
